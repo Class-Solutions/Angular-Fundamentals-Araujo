@@ -1,0 +1,19 @@
+{
+  "name": "eventreg",
+  "version": "1.0.0",
+  "description": "Event Reg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Class-Solutions/Angular-Fundamentals-Araujo.git"
+  },
+  "author": "lra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo/issues"
+  },
+  "homepage": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo#readme"
+}

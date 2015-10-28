@@ -2,6 +2,9 @@
 
 eventsApp.controller('EventController',
 	function EventController($scope) {
+		
+		$scope.snippet = '<span style="color:red;">Hi, there</span>'
+		
 		$scope.event = {
 			name: "Angular Boot Camp",
 			date: "1/1/2013",

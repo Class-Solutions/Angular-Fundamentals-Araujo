@@ -3,6 +3,8 @@
 eventsApp.controller('EventController',
 	function EventController($scope) {
 		
+		$scope.show = true;
+		
 		$scope.snippet = '<span style="color:red;">Hi, there</span>'
 		
 		$scope.event = {
@@ -45,6 +47,9 @@ eventsApp.controller('EventController',
 		};
 		$scope.downVoteSession = function(session){
 			session.upVoteCount--;
+		};
+		$scope.changeValue =function(){
+				$scope.show = !$scope.show;
 		};
 	}
 );

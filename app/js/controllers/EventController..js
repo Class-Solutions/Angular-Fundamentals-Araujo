@@ -1,11 +1,13 @@
+/* global eventsApp */
 'use strict';
 
 eventsApp.controller('EventController',
 	function EventController($scope) {
 		
 		$scope.show = true;
-		
+		$scope.buttonDisabled = true;
 		$scope.snippet = '<span style="color:red;">Hi, there</span>'
+		$scope.nonBindableSpace = true;
 		
 		$scope.event = {
 			name: "Angular Boot Camp",

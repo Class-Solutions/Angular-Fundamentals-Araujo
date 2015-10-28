@@ -18,17 +18,9 @@
 				<img ng-src="{{event.imageUrl}}" alt="{{event.name}}"/>
 				<div class="row">
 					<div class="span11">
-						<h2 data-ng-bind-template="{{event.name}} - {{event.date}}"></h2>
+						<h2 data-ng-bind="event.name"></h2>
 					</div>
 				</div>
-				
-				<button class="btn" data-ng-disabled="buttonDisabled">Disabled</button>
-				
-				<div data-ng-non-bindable="nonBindableSpace">{{1 + 2}}</div>
-				
-				<!--<div ng-bind-html="snippet">some text</div>-->
-				<h2 ng-show="show" ng-click="changeValue()">Show This</h2>
-				<h2 ng-hide="show" ng-click="changeValue()">Hide This</h2>
 				
 				<div class="row">
 					<div class="span3">

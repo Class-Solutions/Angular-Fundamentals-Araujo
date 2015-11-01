@@ -79,3 +79,6 @@ select, textarea {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+.ng-invalid.ng-dirty.ng-touched {
+  background-color: pink;
+}

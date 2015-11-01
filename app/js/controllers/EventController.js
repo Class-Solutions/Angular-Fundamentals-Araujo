@@ -1,54 +1,29 @@
 /* global eventsApp */
+/// <reference path="../services/EventData.js" />
 'use strict';
 
 eventsApp.controller('EventController',
-	function EventController($scope) {
+	function EventController($scope, eventData, $log,$anchorScroll) {
 
 		$scope.orderProp = '-upVoteCount';
 
-		$scope.event = {
-			name: "Angular Boot Camp",
-			date: "1/1/2013",
-			time: "10:30 am",
-			location: {
-				address: 'Rua Ana Soares',
-				city: 'Guarulhos',
-				state: 'São Paulo'
-			},
-			imageUrl: '/img/angularjs-logo.png',
-			sessions: [{
-				name: 'Directives Masterclass',
-				creatorName: 'Lucas Araújo',
-				duration: 1,
-				level: 'Advanced',
-				abstract: '-',
-				upVoteCount: 0
-			},
-				{
-					name: 'Scopes for Fun and Profit',
-					creatorName: 'John Doe',
-					duration: 2,
-					level: 'Introductory',
-					abstract: '-',
-					upVoteCount: 0
-				},
-				{
-					name: 'Hell Behaved Controllers',
-					creatorName: 'Jane Doe',
-					duration: 3,
-					level: 'Intermediate',
-					abstract: '-',
-					upVoteCount: 0
-				},
-				{
-					name: 'Another Session',
-					creatorName: 'Lucas Araujo',
-					duration: 4,
-					level: 'Advanced',
-					abstract: '-',
-					upVoteCount: 0
-				}]
+		eventData.getEventR()
+			.$promise
+			.then(function (event) { console.log(event); $scope.event = event; })
+			.catch(function (data) { $log.warn(data); });
+
+		// 	eventData.getEvent()
+		// 	.success(function(event){$scope.event = event;})
+		// 	.error(function(data,status,headers,config)
+		// 	{				$log.warn(data, status, headers, config);
+		// });
+
+
+		$scope.scrollToSession = function scrollToSession() {
+			console.log('heu');
+			$anchorScroll();
 		};
+
 		$scope.upVoteSession = function (session) {
 			session.upVoteCount++;
 		};

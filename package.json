@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo/issues"
   },
-  "homepage": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo#readme"
+  "homepage": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo#readme",
+  "devDependencies": {
+    "body-parser": "^1.13.1"
+  }
 }

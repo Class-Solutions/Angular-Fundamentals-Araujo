@@ -3,7 +3,7 @@
 'use strict';
 
 eventsApp.controller('EventController',
-	function EventController($scope, eventData, $log,$routeParams) {
+	function EventController($scope, eventData, $log, $routeParams) {
 
 		$scope.orderProp = '-upVoteCount';
 
@@ -21,5 +21,4 @@ eventsApp.controller('EventController',
 		$scope.changeValue = function () {
 			$scope.show = !$scope.show;
 		};
-	}
-	);
+	});

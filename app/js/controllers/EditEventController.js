@@ -7,12 +7,11 @@ eventsApp.controller('EditEventController',
 			if (newEventForm.$valid) {
 				eventData.save(event)
 					.$promise
-					.then(function (response) { console.log('success', response); })
-					.catch(function (response) { console.log('error', response); });
+					.then(function (response) { console.log(response); })
+					.catch(function (response) { console.log(response); });
 			}
 		};
 		$scope.cancelEvent = function cancelEvent() {
 			window.location = '/EventDetails.html';
 		};
-	}
-	);
+	});

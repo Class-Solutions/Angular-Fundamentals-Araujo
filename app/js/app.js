@@ -4,8 +4,8 @@ var eventsApp = angular.module('eventsApp', ['ngSanitize', 'ngRoute', 'ngResourc
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'templates/EventDetails.html',
-                controller: 'EventController'
+                templateUrl: 'templates/EventList.html',
+                controller: 'EventListController'
             })
             .when('/newEvent', {
                 templateUrl: 'templates/NewEvent.html',

@@ -1,15 +1,15 @@
-eventsApp.factory('eventData', function ($http, $resource) {
-	var resource = $resource('/data/event/:id', { id: '@id' });
-	return {
-		getEvent: function () {
-			return $http({ method: 'GET', url: '/data/event/1' });
-		},
-		getEventR: function () {
-			return resource.get({ id: 1 });
-		},
-		save: function (event) {
-			event.id = 999;
-			return resource.save(event);
-		}
-	};
+eventsApp.factory('eventData', function ($resource) {
+    var resource = $resource('/data/event/:id', { id: '@id' }, { "getAll": { method: "GET", isArray: false, params: { something: "foo" } } });
+    return {
+        getEvent: function (eventId) {
+            return resource.get({ id: eventId });
+        },
+        save: function (event) {
+            event.id = 999;
+            return resource.save(event);
+        },
+        getAllEvents: function () {
+            return resource.query();
+        }
+    };
 });

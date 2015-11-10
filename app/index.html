@@ -10,11 +10,11 @@
 
 <body data-ng-cloak="data-ng-cloak">
 	<div class="container">
-		<div class="navbar">
+		<div class="navbar" data-ng-controller="MainMenuController">
 			<div class="navbar-inner">
 				<ul class="nav">
 					<li><a href="/">Home</a></li>
-					<li><a href="newEvent">Create Event</a></li>
+					<li><a href="#" data-ng-click="createEvent()">Create Event</a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,6 +32,7 @@
 	<script src="/js/controllers/EditEventController.js"></script>
 	<script src="/js/controllers/EventController.js"></script>
 	<script src="/js/controllers/EventListController.js"></script>
+	<script src="/js/controllers/MainMenuController.js"></script>
 	<script src="/js/services/EventData.js"></script>
 </body>
 

@@ -17,7 +17,12 @@ var eventsApp = angular.module('eventsApp', ['ngSanitize', 'ngRoute', 'ngResourc
             })
             .when('/event/:eventId', {
                 templateUrl: 'templates/EventDetails.html',
-                controller: 'EventController'
+                controller: 'EventController',
+                resolve:{
+                    event:function($route,eventData){
+                        return eventData.getEvent($route.current.pathParams.eventId).$promise;
+                    }
+                }
             })
             .when('/myProfile', {
                 templateUrl: 'templates/EditProfile.html',

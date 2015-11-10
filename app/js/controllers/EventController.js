@@ -13,9 +13,11 @@ eventsApp.controller('EventController',
 			.catch(function (data) { $log.warn(data); });
 
 		$scope.upVoteSession = function (session) {
+			console.log('hue');
 			session.upVoteCount++;
 		};
 		$scope.downVoteSession = function (session) {
+			console.log('hue');
 			session.upVoteCount--;
 		};
 		$scope.changeValue = function () {

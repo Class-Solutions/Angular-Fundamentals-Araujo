@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/Class-Solutions/Angular-Fundamentals-Araujo#readme",
   "devDependencies": {
-    "body-parser": "^1.13.1"
+    "body-parser": "^1.13.1",
+    "gulp": "^3.9.0",
+    "gulp-bookmarkify": "^0.1.1",
+    "gulp-concat": "^2.6.0"
   }
 }

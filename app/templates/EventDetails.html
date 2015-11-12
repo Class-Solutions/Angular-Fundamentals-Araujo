@@ -31,11 +31,12 @@
 			<div class="row session">
 				<up-vote upvote='upVoteSession(session)' downvote='downVoteSession(session)' count='session.upVoteCount'></up-vote>
 				<div class="well span9">
-					<h4 class="well-title">{{ session.name | uppercase }}</h4>
-					<h6 style="margin-top:-10px;">{{session.creatorName}}</h6>
-					<span>Duration: {{ session.duration }}</span>
-					<br>
-					<span>Level: {{session.level}}</span>
+					<collapsible title="{{session.name | uppercase}}">
+						<h6 style="margin-top:-10px;">{{session.creatorName}}</h6>
+						<span>Duration: {{ session.duration }}</span>
+						<br>
+						<span>Level: {{session.level}}</span>
+					</collapsible>
 				</div>
 			</div>
 		</li>

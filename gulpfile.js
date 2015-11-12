@@ -9,7 +9,7 @@ gulp.task('default', function () {
 		'./app/js/app.js', './app/lib/bootstrap.min.js', './app/js/services/EventData.js',
 		'./app/js/services/GravatarUrlBuilder.js', './app/js/directives/dataKeys.js',
 		'./app/js/directives/eventThumb.js', './app/js/directives/mySample.js', './app/js/directives/upVote.js',
-		'./app/js/directives/gravatar.js',
+		'./app/js/directives/gravatar.js','./app/js/directives/collapsible.js',
 		'./app/js/controllers/EditEventController.js', './app/js/controllers/EditProfileController.js',
 		'./app/js/controllers/EventController.js', './app/js/controllers/EventListController.js',
 		'./app/js/controllers/MainMenuController.js', './app/js/controllers/SampleDirectiveController.js'])

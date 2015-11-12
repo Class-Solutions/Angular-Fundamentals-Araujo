@@ -14,4 +14,4 @@ eventsApp.directive('gravatar', function (gravatarUrlBuilder) {
             });
         }
     }
-})
+});

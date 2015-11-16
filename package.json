@@ -27,6 +27,7 @@
     "body-parser": "^1.13.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-ejsmin": "0.0.1"
+    "gulp-ejsmin": "0.0.1",
+    "gulp-strip-comments": "^1.0.1"
   }
 }
